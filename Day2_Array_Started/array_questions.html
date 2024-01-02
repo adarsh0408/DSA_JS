@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+    <style>
+      pre {
+        background-color: #cecece;
+        font-size: 20px;
+        padding: 22px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      1. Write a program to print the marks obtained by a student in five tests.
+    </h1>
+
+    <pre id="code">
+     Solution:   
+     
+        let arr = [];
+        for (let i = 1; i <= 5; i++) {
+            let num = prompt(`Enter the ${i} Subject number`);
+            arr.push(num);
+        }
+        console.log(arr);
+    </pre>
+
+    <h1>
+      2. Write a program to print the average marks obtained by a student in
+      five tests.
+    </h1>
+  </body>
+  <script>
+    let nums = [];
+    let ans;
+    let n = prompt();
+    for(i=1;i<=n;i++){
+      let numbers = prompt();
+      nums.push(numbers);
+    }
+    var getConcatenation = function(nums) {
+    
+    let numsLength=nums.length
+    for(j=0;j<numsLength;j++){
+     nums.push(nums[j]);
+    }
+    ans = nums;
+  };
+  getConcatenation(nums);
+  </script>
+</html>
